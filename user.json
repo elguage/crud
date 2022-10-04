@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "firstName": "arakjj",
+      "lastName": "test",
+      "email": "artem@taxtank.com.au",
+      "roleUser": "Client",
+      "id": 1
+    },
+    {
+      "firstName": "artem1",
+      "lastName": "test",
+      "email": "artem@taxtank.com.au",
+      "roleUser": "Accountant",
+      "id": 2
+    },
+    {
+      "firstName": "john",
+      "lastName": "doe",
+      "email": "sally@taxtank.com.au",
+      "roleUser": "Advisor",
+      "id": 3
+    },
+    {
+      "firstName": "test",
+      "lastName": "Debbie",
+      "email": "artem@taxtank.com.au",
+      "roleUser": "Accountant",
+      "id": 4
+    }
+  ]
+}

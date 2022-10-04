@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field>
+      <mat-label>first name</mat-label>
+      <input matInput formControlName="firstName" placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>last name</mat-label>
+      <input matInput formControlName="lastName" placeholder="Last Name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>email</mat-label>
+      <input matInput formControlName="email" placeholder="Email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Role</mat-label>
+      <mat-select placeholder="Role user" formControlName="roleUser">
+        <mat-option value="Client">Client</mat-option>
+        <mat-option value="Accountant">Accountant</mat-option>
+        <mat-option value="Advisor">Advisor</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button class="mat-primary" [disabled]="!form.valid" (click)="submit()">Submit</button>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="mat-primary" [disabled]="!form.valid" (click)="submit()">{{isAddUser ? 'Create ' : 'Update '}}User</button>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
