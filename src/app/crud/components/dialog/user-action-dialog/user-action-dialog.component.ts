@@ -42,22 +42,16 @@ export class UserActionDialogComponent implements OnInit {
 
   submit(): void {
     if (this.form.valid && !this.dataUser) {
-      this.userService.addUser(this.form.value).subscribe({
-          next: () => {
-            console.log('user create')
+      this.userService.addUser(this.form.value).subscribe(() => {
             this.form.reset();
             this.dialogRef.close('createUser');
-          }
         }
       )
     }
     else {
-      this.userService.updateUser(this.form.value,this.dataUser.id).subscribe({
-        next: () => {
-          console.log('user update');
+      this.userService.updateUser(this.form.value,this.dataUser.id).subscribe(() => {
           this.form.reset();
           this.dialogRef.close('updateUser');
-        }
       });
     }
   }

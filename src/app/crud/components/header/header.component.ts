@@ -16,11 +16,7 @@ export class HeaderComponent  {
   ) { }
 
   getUsers() {
-    this.userService.getUserList().subscribe({
-      next:(response) => {
-        console.log(response)
-      }
-    })
+    this.userService.getUserList().subscribe();
   }
 
   openDialog() {

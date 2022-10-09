@@ -1,4 +1,3 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
 <div mat-dialog-content>
   <form [formGroup]="form" (ngSubmit)="submit()">
     <mat-form-field>
@@ -21,7 +20,6 @@
         <mat-option value="Advisor">Advisor</mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-button class="mat-primary" [disabled]="!form.valid" (click)="submit()">Submit</button>
   </form>
 </div>
 <div mat-dialog-actions>

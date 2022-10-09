@@ -1,0 +1,8 @@
+<mat-card *ngIf="user">
+  <div>ID: {{user.id}} </div>
+  <div>User first name: {{user.firstName}}</div>
+  <div>User last name: {{user.lastName}} </div>
+  <div>User email: {{user.email}} </div>
+  <div>User role: {{user.roleUser}} </div>
+  <button (click)="back()" mat-raised-button class="mat-primary">Back</button>
+</mat-card>
